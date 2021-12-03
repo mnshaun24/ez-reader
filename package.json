@@ -1,0 +1,22 @@
+{
+  "name": "ez-reader",
+  "version": "1.0.0",
+  "description": "Formerly starter code but I have now taken it over",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mnshaun24/ez-reader.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mnshaun24/ez-reader/issues"
+  },
+  "homepage": "https://github.com/mnshaun24/ez-reader#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
+}
