@@ -2,7 +2,8 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 const generateRead = require("./Develop/utils/generateMarkdown");
-// const { truncate } = require("lodash");
+
+// const { truncate } = require("lodash"); <- wtf is this?
 
 
 

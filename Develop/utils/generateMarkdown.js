@@ -2,8 +2,9 @@
 // If there is no license, return an empty string
 // function renderLicenseBadge(license) {}
 
-const { fstat } = require("fs");
-const { resolve } = require("path/posix");
+// const { fsstat } = require("fs");
+// const { resolve } = require("path/posix"); <- wtf is this?
+
 
 // // TODO: Create a function that returns the license link
 // // If there is no license, return an empty string
@@ -40,7 +41,7 @@ module.exports = gitData => {
 
 // create the file to write the output and include promise
 const writeFile = readmeContent => {
-  return new Promise((reoslve, reject) => {
+  return new Promise((resolve, reject) => {
     fs.writeFile("./develop/dist/README.md", fileContent, err => {
       if (err) {
         reject(err);
