@@ -1,6 +1,9 @@
 // require files and set up functions
+const fs = require("fs");
 const inquirer = require("inquirer");
-const { truncate } = require("lodash");
+const generateRead = require("./Develop/utils/generateMarkdown");
+// const { truncate } = require("lodash");
+
 
 
 // run main function to gather needed data
@@ -111,7 +114,10 @@ const promptUser = () => {
     ]);
 };
 
-promptUser();
+promptUser()
+    .then(gitData => {
+        const pageMD = generateRead(gitData);
+    });
 
 // this is the starter code and it sucks. Doing my own.
 // // TODO: Include packages needed for this application
