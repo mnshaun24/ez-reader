@@ -2,6 +2,9 @@
 // If there is no license, return an empty string
 // function renderLicenseBadge(license) {}
 
+const { fstat } = require("fs");
+const { resolve } = require("path/posix");
+
 // // TODO: Create a function that returns the license link
 // // If there is no license, return an empty string
 // function renderLicenseLink(license) {}
@@ -14,22 +17,40 @@
 module.exports = gitData => {
   console.log(gitData);
 
-  return `# ${promptUser.title}
+  return `# ${gitData.title}
 
-  ##${promptUser.description}
+  ##${gitData.description}
 
-  ##${promptUser.install}
+  ##${gitData.install}
 
-  ##${promptUser.usage}
+  ##${gitData.usage}
 
-  ##${promptUser.contribution}
+  ##${gitData.contribution}
 
-  ##${promptUser.test}
+  ##${gitData.test}
 
-  **My Github repository ${promptUser.github} can be found here: (${promptUser.gitLink})**
+  **My Github repository ${gitData.github} can be found here: (${gitData.gitLink})**
 
-  **Contact me: (${promptUser.email})**  
+  **Contact me: (${gitData.email})**  
 
-  *This project is licensed under the ${promptUser.license} license.*
+  *This project is licensed under the ${gitData.license} license.*
 `;
+};
+
+
+// create the file to write the output and include promise
+const writeFile = readmeContent => {
+  return new Promise((reoslve, reject) => {
+    fs.writeFile("./develop/dist/README.md", fileContent, err => {
+      if (err) {
+        reject(err);
+        return;
+      }
+
+      resolve({
+        ok: true,
+        message: "File created!"
+      });
+    });
+  });
 };

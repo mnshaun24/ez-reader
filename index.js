@@ -115,8 +115,11 @@ const promptUser = () => {
 };
 
 promptUser()
-    .then(gitData => {
-        const pageMD = generateRead(gitData);
+    .then(newThing => {
+        const pageMD = generateRead(newThing);
+    })
+    .then(makeReadMe => {
+        return writeFile(makeReadMe);
     });
 
 // this is the starter code and it sucks. Doing my own.
