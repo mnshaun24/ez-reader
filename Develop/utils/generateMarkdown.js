@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 // function renderLicenseBadge(license) {}
 
-// const { fsstat } = require("fs");
+const { fs } = require("fs");
 // const { resolve } = require("path/posix"); <- wtf is this?
 
 
@@ -39,19 +39,19 @@ module.exports = gitData => {
 };
 
 
-// create the file to write the output and include promise
-const writeFile = readmeContent => {
-  return new Promise((resolve, reject) => {
-    fs.writeFile("./develop/dist/README.md", fileContent, err => {
-      if (err) {
-        reject(err);
-        return;
-      }
+// // create the file to write the output and include promise
+// const writeFile = readmeContent => {
+//   return new Promise((resolve, reject) => {
+//     fs.writeFile("./develop/dist/README.md", fileContent, err => {
+//       if (err) {
+//         reject(err);
+//         return;
+//       }
 
-      resolve({
-        ok: true,
-        message: "File created!"
-      });
-    });
-  });
-};
+//       resolve({
+//         ok: true,
+//         message: "File created!"
+//       });
+//     });
+//   });
+// };

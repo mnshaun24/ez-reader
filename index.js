@@ -115,6 +115,23 @@ const promptUser = () => {
     ]);
 };
 
+// create the file to write the output and include promise
+const writeFile = readmeContent => {
+    return new Promise((resolve, reject) => {
+        fs.writeFile("./develop/dist/README.md", readmeContent, err => {
+        if (err) {
+            reject(err);
+            return;
+        }
+    
+        resolve({
+            ok: true,
+            message: "File created!"
+        });
+        });
+    });
+    };
+
 promptUser()
     .then(newThing => {
         const pageMD = generateRead(newThing);
