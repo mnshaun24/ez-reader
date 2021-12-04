@@ -1,7 +1,6 @@
 // require files and set up functions
-const fs = require("fs");
 const inquirer = require("inquirer");
-const generateRead = require("./Develop/utils/generateMarkdown");
+const { generateMarkdown, writeFile } = require("./Develop/utils/generateMarkdown");
 
 // const { truncate } = require("lodash"); <- wtf is this?
 
@@ -115,30 +114,24 @@ const promptUser = () => {
     ]);
 };
 
-// create the file to write the output and include promise
-const writeFile = readmeContent => {
-    return new Promise((resolve, reject) => {
-        fs.writeFile("./develop/dist/README.md", readmeContent, err => {
-        if (err) {
-            reject(err);
-            return;
-        }
-    
-        resolve({
-            ok: true,
-            message: "File created!"
-        });
-        });
-    });
-    };
 
 promptUser()
     .then(newThing => {
-        const pageMD = generateRead(newThing);
+        const pageMD = generateMarkdown(newThing);
+        return writeFile(pageMD);
     })
-    .then(makeReadMe => {
-        return writeFile(makeReadMe);
+    .then(makeFileResponse => {
+        console.log(makeFileResponse);
+    })
+    .catch(err => {
+        console.log(err);
     });
+
+
+
+    // .then(makeReadMe => {
+    //     return writeFile(makeReadMe);
+    // });
 
 // this is the starter code and it sucks. Doing my own.
 // // TODO: Include packages needed for this application
