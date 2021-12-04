@@ -2,10 +2,6 @@
 const inquirer = require("inquirer");
 const { generateMarkdown, writeFile } = require("./Develop/utils/generateMarkdown");
 
-// const { truncate } = require("lodash"); <- wtf is this?
-
-
-
 // run main function to gather needed data
 const promptUser = () => {
     return inquirer.prompt([
@@ -114,7 +110,7 @@ const promptUser = () => {
     ]);
 };
 
-
+// proccess promise returns
 promptUser()
     .then(newThing => {
         const pageMD = generateMarkdown(newThing);
@@ -123,27 +119,7 @@ promptUser()
     .then(makeFileResponse => {
         console.log(makeFileResponse);
     })
+    // with second promise obtained, make sure errors are shown
     .catch(err => {
         console.log(err);
     });
-
-
-
-    // .then(makeReadMe => {
-    //     return writeFile(makeReadMe);
-    // });
-
-// this is the starter code and it sucks. Doing my own.
-// // TODO: Include packages needed for this application
-
-// // TODO: Create an array of questions for user input
-// const questions = [];
-
-// // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
-
-// // TODO: Create a function to initialize app
-// function init() {}
-
-// // Function call to initialize app
-// init();
