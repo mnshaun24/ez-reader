@@ -1,11 +1,22 @@
 // enable fs to use captured information
 const fs = require("fs");
 
+// create function to render badge
+function renderBadge(license) {
+  if (license === "none") {
+    return "";
+  }
+  return `![LicenseBadge](https://img.shields.io/badge/License-${license}-brightgreen)
+  `;
+};
+
 // create README markdown structure
 const generateMarkdown = gitData => {
   console.log(gitData);
 
   return `# ${gitData.title}
+
+  ${renderBadge(gitData.license)}
 
   # Table of Contents
   1. [Description](#description)

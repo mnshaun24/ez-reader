@@ -1,4 +1,7 @@
-# mnshaun24
+# MN
+
+  ![LicenseBadge](https://img.shields.io/badge/License-MIT-brightgreen)
+  
 
   # Table of Contents
   1. [Description](#description)
@@ -8,21 +11,21 @@
   5. [Tests](#tests)
 
   ## Description <a name="description"></a>
-  jkdalf;ajkl;djkanfeowpnfkdaljfdlanvoewpqnoegkdal;gnadl;adndkoankdanmlndfopandoa
+  dkjflanjeoanfoasnkadnkdangkjlda;
 
   ## Installation <a name="installation"></a>
-  nkoepafnkoeankdlanfoekanvdoanvkodnoavndoajknfpdeafkndasl;nfdsla;
+  fjdapnfdjapndkalnvdklanvldka
 
   ## Usage <a name="usage"></a>
-  kenfopeankfeaonvadnvkopanvkdesafojeaop
+  ndkjflndajlkvndalkjnvkldanvlad
 
   ## Contributing <a name="contributing"></a>
-  koenfoeaknveiaonpcdaknodanea
+  undefined
 
   ## Tests <a name="tests"></a>
-  eaknfaoepknvkoanvopejanvojpaoiruae
+  djkfl;ankldanvlad
 
-  **My Github repository mnshaun24 can be found here: (mn@m)**
+  **My Github repository mn24 can be found here: (m@m)**
 
   **Contact me: (mn@mn)**  
 
