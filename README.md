@@ -18,6 +18,7 @@ To practice node application and generating files from the command line.
 There is no live application link for this assignment
 
 ## Video Walktrough Link
+https://watch.screencastify.com/v/4R1PALsMOSFYSvoAJab6
 
 ## Contribution
 Shaun Sticka
