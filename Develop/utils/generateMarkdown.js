@@ -11,12 +11,14 @@ function renderBadge(license) {
 };
 
 // create README markdown structure
-const generateMarkdown = gitData => {
+const generateMarkdown = (gitData) => {
   console.log(gitData);
 
-  return `# ${gitData.title}
+  const { title, license, description, install, usage, contribution, test, github, gitLink, email } = gitData
 
-  ${renderBadge(gitData.license)}
+  return `# ${title}
+
+  ${renderBadge(license)}
 
   # Table of Contents
   1. [Description](#description)
@@ -26,25 +28,25 @@ const generateMarkdown = gitData => {
   5. [Tests](#tests)
 
   ## Description <a name="description"></a>
-  ${gitData.description}
+  ${description}
 
   ## Installation <a name="installation"></a>
-  ${gitData.install}
+  ${install}
 
   ## Usage <a name="usage"></a>
-  ${gitData.usage}
+  ${usage}
 
   ## Contributing <a name="contributing"></a>
-  ${gitData.contribution}
+  ${contribution}
 
   ## Tests <a name="tests"></a>
-  ${gitData.test}
+  ${test}
 
-  **My Github repository ${gitData.github} can be found here: (${gitData.gitLink})**
+  **My Github repository ${github} can be found here: (${gitLink})**
 
-  **Contact me: (${gitData.email})**  
+  **Contact me: (${email})**  
 
-  *This project is licensed under the ${gitData.license} license.*
+  *This project is licensed under the ${license} license.*
 `;
 };
 

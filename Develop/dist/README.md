@@ -1,4 +1,4 @@
-# MN
+# EZ-Guide
 
   ![LicenseBadge](https://img.shields.io/badge/License-MIT-brightgreen)
   
@@ -11,22 +11,22 @@
   5. [Tests](#tests)
 
   ## Description <a name="description"></a>
-  dkjflanjeoanfoasnkadnkdangkjlda;
+  This is the challenge 9 weekly assignment - make a readme file.
 
   ## Installation <a name="installation"></a>
-  fjdapnfdjapndkalnvdklanvldka
+  Follow video link provided in readme
 
   ## Usage <a name="usage"></a>
-  ndkjflndajlkvndalkjnvkldanvlad
+  undefined
 
   ## Contributing <a name="contributing"></a>
   undefined
 
   ## Tests <a name="tests"></a>
-  djkfl;ankldanvlad
+  Follow the video link in the readme
 
-  **My Github repository mn24 can be found here: (m@m)**
+  **My Github repository https://github.com/mnshaun24 can be found here: (https://www.https://github.com/mnshaun24)**
 
-  **Contact me: (mn@mn)**  
+  **Contact me: (miyadamanshaun@outlook.com)**  
 
   *This project is licensed under the MIT license.*
